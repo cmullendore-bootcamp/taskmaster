@@ -24,9 +24,23 @@
       </p>
     </header>
     <main class="col-12 col-lg-9">
-      <div class="m-5">
-        <h2>To Do</h2>
-        <ul id="list-toDo" class="list-group"> </ul>
+      <div class="m-5 row justify-content-around">
+        <div class="card">
+          <h2 class="card-header">To Do</h2>
+          <ul id="list-toDo" class="list-group"> </ul>
+        </div>
+        <div class="card">
+          <h2 class="card-header">In Progress</h2>
+          <ul id=list-inProgress" class="list-group"></ul>
+        </div>
+        <div class="card">
+          <h2 class="card-header">In Review</h2>
+          <ul id=list-inReview" class="list-group"></ul>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Completed</h2>
+          <ul id=list-completed" class="list-group"></ul>
+        </div>
       </div>
     </main>
   </div>
@@ -46,11 +60,11 @@
           <form>
             <div class="form-group">
               <label for="modalTaskDescription">Task description</label>
-              <textarea id="modalTaskDescription" rows="3"></textarea>
+              <textarea id="modalTaskDescription" rows="3" class="form-control"></textarea>
             </div>
             <div class="form-group">
               <label for="modalDueDate">Due date</label>
-              <input type="text" id="modalDueDate" placeholder="mm/dd/yyyy" autocomplete="off" />
+              <input class="form-control" type="text" id="modalDueDate" placeholder="mm/dd/yyyy" autocomplete="off" />
             </div>
           </form>
         </div>
